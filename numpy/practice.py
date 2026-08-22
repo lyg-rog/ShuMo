@@ -106,7 +106,109 @@ import numpy as np
 # print(a@b) #矩阵乘法
 # print(np.matmul(a,b))
 
+#numpy中的常用函数
+#计算平方根
+# print(np.sqrt(4))
+# print(np.sqrt([1,4,9]))
+# arr = np.array([1,25,81])
+# print(np.sqrt(arr))
 
+#计算指数
+# print(np.exp(1))
+# print(np.exp(0))
 
+# #计算自然对数
+# print(np.log(np.e **2))
 
+#计算正弦值 余弦值
+# print(np.sin(1))
+# print(np.sin(np.pi/2))
+# print(np.cos(np.pi))
+
+#计算绝对值
+# arr = np.abs([1,2,-3])
+# print(arr)
+
+#计算a的b次幂
+# print(np.pow(2,3))
+
+#庆祝codex鼠标卡顿问题得以解决
+#四舍五入
+# print(np.round([3.2,4.5,8.1,9.7,4.56]))
+
+#向上取整 & 向下取整
+# print(np.ceil([1.6,5.1,-2.1,-2.6]))
+# print(np.floor([1.6,5.1,-2.1,-2.6]))
+
+#检测缺失值
+# print(np.isnan([1,2,3,np.nan,np.nan]))
+
+#求和
+# arr = [1,2,3]
+# print(np.sum(arr))
+
+#计算平均值
+# print(np.mean([1,2,3]))
+
+#计算中位数
+# print(np.median([4,1,2]))
+# print(np.median([1,2,4,8]))
+
+#方差和标准差
+# print(np.var([1,2,3]))
+# print(np.std([1,2,3]))
+# print(np.sqrt(np.var([1,2,3])))
+
+#计算最大值和最小值
+# print(np.max([1,2,3]),np.argmax([1,2,3]))
+# print(np.min([1,2,3]),np.argmin([1,2,3]))
+
+#分位数
+# print(np.median([1,2,3]))
+# print(np.percentile([1,2,3],50))
+# print(np.percentile([1,2,3],20)) #1 + 1*0.4 = 1.4
+# print(np.percentile([44,47,64,67],25)) #44 + 3*0.75 = 46.25
+
+#累计和 累计积
+# arr = np.array([1,2,3])
+# print(np.sum(arr))
+# print(np.cumsum(arr))
+# print(np.cumprod(arr))
+
+# arr = np.array([[1,2,3],[4,5,6]])
+# print(np.sum(arr)) #全部加起来的一个标量结果
+# print(np.cumsum(arr,axis=1))
+# print(np.cumprod(arr,axis=1))
+
+#比较函数
+#比较是否大于小于等于
+# print(np.greater([3,4,5,6,7],4))
+# print(np.less([3,4,5,6,7],4))
+# print(np.equal([3,4,5,6,7],4))
+# print(np.equal([3,4,5],[4,4,4]))
+
+#逻辑与或非
+# print(np.logical_and([0,0],[1,1]))
+# print(np.logical_not([0,1]))
+# print(np.logical_or([0,0],[1,1]))
+
+#检查数组中是否有一个True
+# print(np.any([0,0,0]))
+# print(np.all([1,1,1]))
+
+#自定义条件
+#print(np.where(条件,符合条件,不符合条件))
+# arr = np.array([1,2,3,4,5])
+# print(np.where(arr<3,arr,0))
+
+#用于数值的分类
+# arr = np.array([1,2,3,4,5])
+# print(np.where(arr<3,1,0))
+
+# score = np.random.randint(0,100,20)
+# print(score)
+# print(np.where(score>=60,'及格','不及格'))
+#多分类
+# print(np.where(score<60,'不及格',
+#                np.where(score<80,'良好','优秀')))
 
